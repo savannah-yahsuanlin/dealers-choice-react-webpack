@@ -27,7 +27,7 @@ describe('App', ()=> {
 
 	describe('GET /api/characters/:id', () => {
 		it('returns 1 character', async() => {
-			const character = { id:1, name:'moe' }
+			const character = { id: 1, name: 'moe' }
 			const response = await app.get(`/api/characters/${character.id}`)
 			expect(response.status).to.equal(200)
 			expect(response._body).to.be.an('object')
