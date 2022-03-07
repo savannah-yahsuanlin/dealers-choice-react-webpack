@@ -9,6 +9,10 @@ ul div {
 	margin: 10px 0;
 }
 
+ul div:hover {
+	text-decoration: underline;
+}
+
 
 li {
 	list-style-type: none;
