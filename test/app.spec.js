@@ -4,7 +4,7 @@ const request = require('supertest')
 const app = request(require('../server'))
 
 
-describe('App', ()=> {
+describe('App', () => {
 	let seed
 	beforeEach( async()=> {
 		seed = await syncAndSeed()

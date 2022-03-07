@@ -5,6 +5,7 @@ const { syncAndSeed, models: {Characters} } = require('./db')
 const app = express()
 
 app.use('/dist', express.static(path.join(__dirname, 'dist')))
+app.use('/', express.static(path.join(__dirname, 'public')))
 
 app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'index.html')))
 
